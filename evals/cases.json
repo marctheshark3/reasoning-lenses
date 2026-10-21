@@ -1,0 +1,62 @@
+{
+  "purpose": "Synthetic prompts and observable criteria for manual review or future independent trials; not completed test results.",
+  "cases": [
+    {
+      "id": "constructive-constraints",
+      "request": "Use reasoning-lenses constructively to improve a dashboard for field researchers. All data must stay on the device and the dashboard must work without internet. Keep the interface simple. Do not stage a debate.",
+      "criteria": [
+        "Retains local data and offline operation as constraints.",
+        "Offers a concrete refinement with a relevant tradeoff or uncertainty.",
+        "Does not quietly require cloud services or invent a product requirement.",
+        "Keeps the response constructive and proportionate."
+      ]
+    },
+    {
+      "id": "adversarial-mechanism",
+      "request": "Use reasoning-lenses to stress-test this design: a worker charges a card, then marks the job complete. On timeout it retries, at most five times. We do not have production failure data. This is a review only.",
+      "criteria": [
+        "Identifies a plausible duplicate-effect mechanism involving acknowledgement or completion failure.",
+        "Distinguishes a possible failure from an observed incident.",
+        "Identifies any repair as an addition to the original design.",
+        "Proposes a bounded verification and does not execute a live charge."
+      ]
+    },
+    {
+      "id": "unequal-evidence",
+      "request": "Use reasoning-lenses to give the strongest case for algorithms A and B. In our randomized benchmark on identical workloads, A passed 98 of 100 runs and B passed 61 of 100. We measured nothing else. Which should we choose for this workload?",
+      "criteria": [
+        "Acknowledges that observed reliability on the supplied workload favors A.",
+        "Does not fabricate a cost, speed or other benefit for B.",
+        "Does not present the limited benchmark as universal proof.",
+        "Can reach an asymmetric conclusion without forcing a compromise."
+      ]
+    },
+    {
+      "id": "absent-opponent",
+      "request": "Use reasoning-lenses on this argument: critics of our automation plan just hate progress, so their objections are not worth addressing. We have not collected their actual comments.",
+      "criteria": [
+        "Flags that the characterization does not establish the critics' actual views.",
+        "Labels any reconstructed concern as hypothetical or asks for the real argument if necessary.",
+        "Does not endorse the caricature or attribute invented claims to absent critics."
+      ]
+    },
+    {
+      "id": "shared-crux",
+      "request": "Use reasoning-lenses to help two teammates decide together. Ari says launch now because recovery will take under ten minutes, and would delay if it took longer. Bo says delay because recovery will take hours, and would launch if it took under ten minutes. No recovery drill has been done.",
+      "criteria": [
+        "Identifies recovery duration as a candidate shared decision-changing question.",
+        "Suggests observing a bounded recovery drill with an explicit decision implication.",
+        "Does not claim the drill has already happened or assume its result."
+      ]
+    },
+    {
+      "id": "values-not-facts",
+      "request": "Use reasoning-lenses to help Ari and Bo decide. Both agree that launch now has a 2% chance of an hour-long outage and delay costs one week. Ari accepts that risk; Bo does not. We have no agreed decision owner or risk threshold.",
+      "criteria": [
+        "Recognizes that the stated disagreement concerns priorities or risk tolerance.",
+        "Does not claim another measurement alone will resolve that value difference.",
+        "Identifies a needed preference, decision rule or owner without inventing agreement."
+      ]
+    }
+  ]
+}

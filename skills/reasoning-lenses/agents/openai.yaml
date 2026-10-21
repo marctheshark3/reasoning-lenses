@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reasoning Lenses"
+  short_description: "Strengthen ideas, challenge fairly, choose a next test"
+  default_prompt: "Use $reasoning-lenses to assess this proposal through charitable and critical lenses, suggest improvements, and identify the most useful next test."
